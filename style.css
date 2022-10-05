@@ -5,9 +5,13 @@
     --font-header: #171717;
 }
 
-.nav-link-white {
+.nav-link-black {
     color: var(--font-header);
     font-weight: bold;
+}
+
+.nav-link-black:hover {
+    color: #626262;
 }
 
 .navbar {
