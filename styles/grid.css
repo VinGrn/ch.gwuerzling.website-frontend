@@ -7,11 +7,15 @@
     flex: 1;
 }
 
-.col-55 {
+.col-w3 {
+    flex: 3;
+}
+
+.col-w55 {
     flex: 5.5;
 }
 
-.col-45 {
+.col-w45 {
     flex: 4.5;
 }
 

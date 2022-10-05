@@ -85,6 +85,10 @@
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .about-products-container {
     padding: 70px 20%;
     font-family: "Open Sans", serif;
@@ -108,12 +112,37 @@
     color: var(--font-color);
 }
 
-.product-item {
+.link {
     text-decoration: none;
     color: var(--font-color);
 }
 
-.product-item:hover {
+.link:hover {
     text-decoration: none;
     color: var(--font-color);
+}
+
+.about-us-container {
+    padding: 70px 20%;
+    font-family: "Open Sans", serif;
+    color: var(--font-color);
+    background-color: #FAFAFA;
+}
+
+.footer {
+    padding: 70px 20% 60px;
+    font-family: "Open Sans", serif;
+    color: #d5d5d5;
+    background-color: var(--primary-color);
+}
+
+.footer-link {
+    color: #FFF !important;
+}
+
+.copyright-footer {
+    padding-top: 1rem;
+    font-family: "Open Sans", serif;
+    color: #c2c2c2;
+    background-color: #FFF;
 }
