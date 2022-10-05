@@ -1,0 +1,22 @@
+
+.flex-grid {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-55 {
+    flex: 5.5;
+}
+
+.col-45 {
+    flex: 4.5;
+}
+
+@media (max-width: 450px) {
+    .flex-grid {
+        display: block;
+    }
+}
