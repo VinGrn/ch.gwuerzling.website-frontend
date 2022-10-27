@@ -5,6 +5,10 @@
     --font-header: #171717;
 }
 
+* {
+    font-family: 'Open Sans', serif;
+}
+
 .navbar {
     padding-right: 20% !important;
     padding-left: 20% !important;
