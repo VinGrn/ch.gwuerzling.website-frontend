@@ -174,6 +174,30 @@ hr{
     color: var(--font-color);
 }
 
+.product {
+    padding-bottom: 10px;
+    background-color: white;
+    transition: transform .2s;
+}
+
+.product:hover {
+    transform: scale(1.3);
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    z-index: 100 !important;
+    width: 250px;
+}
+
+.product-short-description{
+    display: none;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.product:hover .product-short-description{
+    display: block;
+}
+
 .link {
     text-decoration: none;
     color: var(--font-color);
