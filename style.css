@@ -177,7 +177,7 @@ hr{
 .product {
     padding-bottom: 10px;
     background-color: white;
-    transition: transform .2s;
+    transition: transform .6s;
 }
 
 .product:hover {
@@ -228,4 +228,20 @@ hr{
     padding-top: 1rem;
     color: #c2c2c2;
     background-color: #FFF;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
