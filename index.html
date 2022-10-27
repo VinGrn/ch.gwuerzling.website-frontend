@@ -6,16 +6,29 @@
     <meta name="keywords" content="gwürzling, gewürze, spices, kochen, würzen, flavour, tbz, schulprojekt, geschmack, shopify, lehrfirma">
     <meta name="author" content="Gwürzling IT-Team">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gwürzling</title>
+    <title>Einzigartige Geschmäcke | Gwürzling</title>
     <link rel="icon" href="images/logo-small-transpaent.png">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="styles/grid.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"/>
+    <script>
+        function showMenu() {
+            const linkList = document.getElementById("linkList");
+            const main = document.getElementById("main");
+            const menuIcon = document.getElementById("menuIcon");
+            if (linkList.style.display === "block") {
+                linkList.style.display = "none";
+                main.style.marginTop = '70px';
+                menuIcon.innerText = 'menu';
+            } else {
+                linkList.style.display = "block";
+                main.style.marginTop = '0px';
+                menuIcon.innerText = 'menu_open';
+            }
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -30,9 +43,23 @@
                 <a class="nav-link nav-link-black" href="#about-us">ÜBER UNS</a>
             </li>
         </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-burger nav-link-black" onclick="showMenu()"><span id="menuIcon" class="material-icons">menu</span></a>
+            </li>
+        </ul>
     </nav>
+    <div id="linkList">
+        <div class="menu-link">
+            <a class="menu-link menu-link-black" href="#products">PRODUKTE</a>
+        </div>
+        <hr>
+        <div class="menu-link">
+            <a class="menu-link-black" href="#about-us">ÜBER UNS</a>
+        </div>
+    </div>
 </header>
-<main>
+<main id="main">
     <div class="flex-grid spices-container">
         <div class="col-w55">
             <div class="spices-container-content">

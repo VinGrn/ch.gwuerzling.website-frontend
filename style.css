@@ -5,28 +5,77 @@
     --font-header: #171717;
 }
 
-.nav-link-black {
+.navbar {
+    padding-right: 20% !important;
+    padding-left: 20% !important;
+    position: fixed !important;
+    top: 0;
+    z-index: 999 !important;
+    width: 100%;
+}
+
+@media (max-width: 617px) {
+    .nav-burger {
+        display: block !important;
+    }
+
+    .nav-link {
+        display: none !important;
+    }
+}
+
+@media (max-width: 470px) {
+    .navbar, #linkList {
+        padding-right: 10% !important;
+        padding-left: 10% !important;
+    }
+}
+
+.nav-burger {
+    display: none;
+    padding-top: 3px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-link-black, .menu-link-black {
     color: var(--font-header);
     font-weight: bold;
 }
 
-.nav-link-black:hover {
+.nav-link-black:hover, .menu-link-black:hover {
     color: #626262;
+    text-decoration: none;
 }
 
-.navbar {
-    padding-right: 20% !important;
-    padding-left: 20% !important;
+.nav-burger {
+    float: right!important;
 }
 
 .navbar-grey {
     background-color: var(--background-header);
 }
 
-@media (max-width: 450px) {
-    .spices-picture {
-        display: none;
-    }
+#linkList {
+    display: none;
+    margin-top: 70px;
+    background-color: #d5d5d5;
+    padding-right: 20% !important;
+    padding-left: 20% !important;
+    text-align: center;
+}
+
+.menu-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+hr{
+    margin: 0 !important;
+}
+
+main {
+    margin-top: 70px;
 }
 
 .spices-container {
@@ -35,9 +84,11 @@
     background-repeat: no-repeat;
 }
 
-.spices-picture {
-    width: 100%;
-    height: 100%;
+@media (max-width: 1200px) {
+    .spices-container {
+        background-color: #416F14;
+        background-image: none !important;
+    }
 }
 
 .spices-container-content {
@@ -79,14 +130,12 @@
     transition: background-color 1s;
 }
 
-.order-button:hover .order-button-sm:hover {
-    background-color: white;
+.order-button:hover, .order-button-sm:hover {
+    background-color: #f2f2f2;
     color: black;
 }
 
 .center {
-    margin: auto;
-    width: 50%;
     text-align: center;
 }
 
