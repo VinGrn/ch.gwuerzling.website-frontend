@@ -38,6 +38,12 @@
     cursor: pointer;
 }
 
+@media (min-width: 617px) {
+    #linkList {
+        display: none !important;
+    }
+}
+
 .nav-link-black, .menu-link-black {
     color: var(--font-header);
     font-weight: bold;
