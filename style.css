@@ -42,6 +42,10 @@
     #linkList {
         display: none !important;
     }
+
+    #main {
+        margin-top: 70px !important;
+    }
 }
 
 .nav-link-black, .menu-link-black {
@@ -80,7 +84,7 @@ hr{
     margin: 0 !important;
 }
 
-main {
+#main {
     margin-top: 70px;
 }
 
