@@ -63,7 +63,7 @@
 }
 
 .nav-burger {
-    float: right!important;
+    float: right !important;
 }
 
 .navbar-grey {
@@ -84,7 +84,7 @@
     padding-bottom: 5px;
 }
 
-hr{
+hr {
     margin: 0 !important;
 }
 
@@ -153,6 +153,35 @@ hr{
     text-align: center;
 }
 
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .text-center {
     text-align: center;
 }
@@ -171,6 +200,12 @@ hr{
     font-size: 50px !important;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.calender-container {
+    padding: 70px 20%;
+    color: var(--font-color);
+    background-color: white;
 }
 
 .products-container {
@@ -192,13 +227,13 @@ hr{
     width: 250px;
 }
 
-.product-short-description{
+.product-short-description {
     display: none;
     margin-bottom: 5px;
     font-size: 11px;
 }
 
-.product:hover .product-short-description{
+.product:hover .product-short-description {
     display: block;
 }
 
