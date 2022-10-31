@@ -179,9 +179,9 @@ hr{
 }
 
 .product {
-    padding-bottom: 10px;
     background-color: white;
     transition: transform .6s;
+    padding: 5px !important;
 }
 
 .product:hover {
